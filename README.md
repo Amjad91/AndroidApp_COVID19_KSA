@@ -6,7 +6,7 @@ Covid-19 ksa provide latest covid-19 cases in Saudi Arabia and total cases aroun
 <img src="covid_app.png" width="220" height="400" />
 ___
 
-##Dependencies
+## Dependencies
 
 ```
     implementation 'com.squareup.okhttp3:okhttp:3.14.9'
@@ -18,7 +18,7 @@ ___
 
 ___
 
-###Api 
+### Api 
 
 1. [COVID-19](https://rapidapi.com/api-sports/api/covid-193) : Get statistics for all countries about COVID-19 [FREE TO USE]
 
