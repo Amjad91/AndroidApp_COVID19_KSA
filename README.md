@@ -3,7 +3,7 @@
 Covid-19 ksa provide latest covid-19 cases in Saudi Arabia and total cases around the world.
 
 
-<img src="covid_app.png" width="200" height="400" />
+<img src="covid_app.png" width="220" height="400" />
 ___
 
 ##Dependencies
