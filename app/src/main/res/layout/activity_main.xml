@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:text="Covid-19 Cases in Saudi" />
+
+    <RelativeLayout
+        android:id="@+id/casesKsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_title"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/confirmed"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Confirmed" />
+
+        <TextView
+            android:id="@+id/txtConfirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmed"
+            android:layout_marginTop="12dp"
+            android:background="#eee"
+            android:padding="8dp"
+            android:text="confirmed" />
+
+        <TextView
+            android:id="@+id/txtActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/txtConfirmed"
+            android:padding="8dp"
+            android:text="Active Cases" />
+
+        <TextView
+            android:id="@+id/active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtActive"
+            android:layout_alignLeft="@+id/txtActive"
+            android:layout_alignRight="@+id/txtActive"
+            android:layout_marginTop="12dp"
+            android:background="#eee"
+            android:padding="8dp"
+            android:text="Active" />
+
+
+        <TextView
+            android:id="@+id/txtCritical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/txtActive"
+            android:padding="8dp"
+            android:text="Critical Cases" />
+
+        <TextView
+            android:id="@+id/critical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCritical"
+            android:layout_alignLeft="@+id/txtCritical"
+            android:layout_alignRight="@+id/txtCritical"
+            android:layout_marginTop="12dp"
+            android:background="#eee"
+            android:padding="8dp"
+            android:text="critical" />
+
+
+        <TextView
+            android:id="@+id/txtRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtConfirmed"
+            android:layout_alignLeft="@+id/confirmed"
+            android:layout_alignRight="@+id/confirmed"
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:text="Recovered" />
+
+        <TextView
+            android:id="@+id/recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRecovered"
+            android:layout_alignLeft="@+id/txtRecovered"
+            android:layout_alignRight="@+id/txtRecovered"
+            android:layout_marginTop="12dp"
+            android:background="#eee"
+            android:padding="8dp"
+            android:text="Recovered" />
+
+        <TextView
+            android:id="@+id/txtDeaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/active"
+            android:layout_alignLeft="@+id/active"
+            android:layout_alignRight="@+id/active"
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:text="Deaths" />
+
+        <TextView
+            android:id="@+id/deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDeaths"
+            android:layout_alignLeft="@+id/txtDeaths"
+            android:layout_alignRight="@+id/txtDeaths"
+            android:layout_marginTop="12dp"
+            android:background="#eee"
+            android:padding="8dp"
+            android:text="deaths" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/casesKsa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Total Cases in the world" />
+
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTotal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#eee"
+        android:padding="5dp"
+
+        >
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTotal"
+            android:background="#eee"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtTotalConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Confirmed" />
+
+            <TextView
+                android:id="@+id/txtTotalActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total Active" />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row1"
+            android:layout_centerHorizontal="true"
+            android:background="#eee"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/totalConfirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="5dp"
+                android:text="Total Confirmed" />
+
+            <TextView
+                android:id="@+id/totalActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="#fff"
+                android:padding="5dp"
+                android:text="Total Active"
+
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row2"
+            android:layout_centerHorizontal="true"
+            android:background="#eee"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtTotalRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Recovered" />
+
+            <TextView
+                android:id="@+id/txtTotalDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Total Deaths" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/row3"
+            android:layout_centerHorizontal="true"
+            android:background="#eee"
+            android:paddingLeft="20dp"
+            android:paddingTop="0dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/totalRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:padding="5dp"
+                android:text="Total Recovered"
+
+                />
+
+            <TextView
+                android:id="@+id/totalDeaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="#fff"
+                android:padding="5dp"
+                android:text="Total Deaths"
+
+                />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="© Developed by Amjad"
+        android:textSize="10dp" />
+
+</RelativeLayout>
