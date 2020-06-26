@@ -4,7 +4,7 @@ Covid-19 ksa provide latest covid-19 cases in Saudi Arabia and total cases aroun
 
 
 <img src="covid_app.png" width="220" height="400" />
-___
+____
 
 ## Dependencies
 
@@ -16,7 +16,7 @@ ___
     implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
 ```
 
-___
+_____
 
 ### Api 
 
